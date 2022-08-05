@@ -1,0 +1,40 @@
+
+.chathead{
+    text-align: center;
+    background-color: gold;
+}
+.container{
+    width: 1600px;
+    overflow: hidden;
+    height: 900px;
+display: block;
+position: absolute;
+top:40px;
+
+}
+.squares{
+    overflow: hidden;
+    width:16px;
+    height: 16px;
+    position: absolute;
+    border: 1px solid black;
+}
+
+.colors{
+    width: 1600px;
+    overflow: hidden;
+    height: 16px;
+display: block;
+position: absolute;
+right:0px;
+
+}
+.colorSquares{
+    width:16px;
+    height: 16px;
+    position: absolute;
+    border: 1px solid black;
+}
+input{
+    width:30%;
+}
