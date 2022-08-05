@@ -14,7 +14,7 @@ const connectionOptions = {
     "transports": ["websocket"]
 };
 
-let socket = io.connect("https://pixelboard-server.herokuapp.com/", connectionOptions)
+let socket = io.connect("https://localhost:4001/", connectionOptions)
 const createElms = () => {
     let s = []
     let rectSize = 16;
@@ -46,7 +46,7 @@ export default function Chat() {
     const getPicked = async () => {
         return new Promise(function () {
             socket.off("connected")
-            fetch('https://pixelboard-server.herokuapp.com/')
+            fetch('https://localhost:4001/')
                 .then(response => response.json())
                 .then((d) => {
                     setPicked(d)
